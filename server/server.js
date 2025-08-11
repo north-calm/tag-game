@@ -4,6 +4,7 @@ const server = new WebSocket.Server({port: 8080});
 
 allPlayers = {};
 
+
 server.on('connection', (socket)=>{
     var playerId = Math.random().toString(36).substring(2, 15);
     allPlayers[playerId] = { id: playerId, x: 0, y: 0 };

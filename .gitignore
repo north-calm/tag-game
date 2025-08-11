@@ -8,7 +8,7 @@ __pycache__/
 
 # Ignore node_modules in server
 /server/node_modules/
-
+/node_modules
 # Ignore log files
 *.log
 
