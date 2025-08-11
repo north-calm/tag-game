@@ -2,7 +2,6 @@ import pygame
 import threading
 import json
 import websocket
-import random
 import queue # Using queue for thread-safe message handling
 
 # Server URL
