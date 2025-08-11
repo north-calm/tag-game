@@ -1,0 +1,22 @@
+# Ignore Python cache and virtual environment files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+
+# Ignore node_modules in server
+/server/node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore environment variable files
+.env
+# Ignore package-lock if you want (optional)
+# /server/package-lock.json
