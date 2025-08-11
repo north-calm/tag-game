@@ -105,7 +105,7 @@ while running:
         data = msg.get("data")
         
         if msg_type == "player_joined":
-            # This is your unique ID from the server
+            # unique ID from the server
             player_id = data.get("id")
             print(f"Assigned Player ID: {player_id}")
 
