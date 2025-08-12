@@ -21,7 +21,15 @@ server.on('connection', (socket)=>{
             // Find a match for the player
             allPlayers[playerId].isReady = true;
             const opponent = Object.values(allPlayers).find(player => player.id !== playerId && !player.inAMatch && player.socket.readyState === WebSocket.OPEN && player.isReady);
+            
+            allPlayers[playerId].x = Math.random() * 800;
+            allPlayers[playerId].y = Math.random() * 600;
+            
             if (opponent) {
+
+                opponent.x = Math.random() * 800;
+                opponent.y = Math.random() * 600;
+
                 var role = Math.random() < 0.5 ? 'catcher' : 'runner';
                 allPlayers[playerId].opponent = opponent;
                 allPlayers[playerId].inAMatch = true;
